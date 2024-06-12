@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(202, 167, 235);
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.clock {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.clock h1 {
+  text-align: center;
+  text-transform: uppercase;
+  font-style: bold;
+  font-weight: 900;
+  font-size: 60px; /* Adjust font size for smaller screens */
+  margin: 10px; /* Add margin to center the clock */
+}
+
+.clock span {
+  text-align: center;
+  text-transform: uppercase;
+  font-style: bold;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-weight: 900;
+  font-size: 30px; /* Adjust font size for smaller screens */
+  margin: 5px; /* Add margin to center the clock */
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 600px) {
+  .clock h1 {
+      font-size: 40px; /* Adjust font size for smaller screens */
+  }
+  
+  .clock span {
+      font-size: 20px; /* Adjust font size for smaller screens */
+  }
+}
